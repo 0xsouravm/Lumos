@@ -1,0 +1,341 @@
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+/* Navbar Start */
+.navbar_{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-bottom: 3%;
+}
+
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.navli{
+    margin:0px 20px;
+}
+
+.navlink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: sticky;
+}
+  
+.navlink:hover {
+    background-color: rgba(252, 252, 252, 0.2); 
+    color: aqua;
+    transition-duration: 1s; 
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.logo{
+    float: left;
+    margin-left: 4%;
+    margin-top: 0.2%;
+    position: absolute;
+    opacity: 1;
+}
+
+.logolink{
+    text-align: center;
+    -webkit-text-stroke:  white;
+    -webkit-text-stroke-width: 0.25px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 5px cyan;
+    transition-duration: 1s;
+}
+
+.logolink:hover{
+    text-decoration: none;
+    -webkit-text-stroke:  cyan;
+    -webkit-text-stroke-width: 0.25px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar End */
+
+label{
+    font-size:16px;
+    color: gainsboro;
+    font-family: 'Aleo', serif;
+}
+
+.fielddes{
+    width:380px;
+    height:550px;
+    text-align:left; 
+    border-radius: 15px;
+    border-style: none;
+    overflow-y: hidden; 
+    background:rgba(0, 0, 0, 0.9);
+    padding-left: 25px;
+    padding-right: 0.01%;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    position:absolute;
+    transition-duration: 1s;   
+    box-shadow: 0px 0px 10px darkcyan;
+    -webkit-transition-duration: 1s; 
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.fielddes:hover{
+    background:rgba(0,0,0,1);
+    box-shadow: 0px 0px 19px darkcyan;    
+}
+
+::-webkit-input-placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.fielddes:hover  p{
+    -webkit-text-stroke: rgb(44, 52, 54);
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.fielddes:hover form label{
+    -webkit-text-stroke: #00adb5;
+    -webkit-text-stroke-width: 0.2px;
+}
+
+.inp{
+    padding: 12px 5px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 3px solid darkcyan;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline:none;
+    font-size: 15px;
+    width: 210px;
+    height: 15px;
+    background-color:rgba(0, 0, 0, 0.0);
+    color:#ccc;
+    font-family: 'Aleo', serif;
+}
+
+.inp:hover{
+    border-bottom: 3px solid white;
+}
+
+.inp:focus{
+    width: 220px;
+    height: 20px;
+}
+
+.fb {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../icons/fb.svg);
+    background-position:-11.01px -0.5px ;
+    background-size: 62px 42px;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    border-radius: 55%;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgb(66, 103, 178);
+}
+.google{
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../icons/google.svg);
+    background-position:-11.01px -0.5px ;
+    background-size: 62px 42px;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    border-radius: 55%;
+    margin-left: 93px;
+    border-style: solid;
+    border-top-color:#DB4437;
+    border-bottom-color: #0F9D58;
+    border-left-color: #F4B400;
+    border-right-color: #4285F4;
+}
+
+.twitter {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: url(../icons/twitter.svg);
+    background-position:-11.01px -0.5px ;
+    background-size: 62px 42px;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    border-radius: 55%;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: rgb(29, 161, 242);
+}
+
+.signin{
+    margin-left: 93px;
+    color:white;
+    font-size: 40px;
+    padding-left: 15px;
+    font-family: 'Aleo', serif;
+}
+
+.button{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.0);
+    border-style: solid;
+    border-width: 2px ;
+    border-radius: 15px;
+    border-color:  darkcyan;
+    margin-left: 103px ;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    font-size: larger;
+    height: 60px;
+    width: 125px;
+    transition-duration: 0.5s;
+    outline:none;  
+    font-family: 'Aleo', serif;
+}
+
+.button:hover{
+    box-shadow: inset 0px 0px 5px cyan;
+}
+
+#myBar {
+    width: 315px;
+    height: 2px;
+    border:none;
+    background-color:darkcyan;
+    margin-left: 5px;
+}
+
+#myProgress {
+    width: 315px;
+    height: 2px;
+    border:none;
+    background-color:darkcyan;
+    margin-left: 5px;
+}
+
+.reg{
+    transition-duration: 1s;
+}
+
+.reg:active, .reg:link, .reg:visited {
+    color:antiquewhite;
+}
+
+.reg:hover{
+    color: cyan;
+    letter-spacing: 0.5px;
+}
+
+
+/* Footer */
+.container-fluid {
+    overflow: hidden;
+    margin-top: 20px;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-family: 'Aleo', sans-serif;
+}
+
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.bold-text {
+    color: #989c9e !important;
+    font-size:large;
+}
+
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.footlink:active, .footlink:visited{
+    color: white;
+}
+
+.footlink {
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.footlink:hover{
+    text-decoration: none;
+    color:cyan;
+    letter-spacing: 1px;
+}
+
+.fa-instagram, .fa-facebook, .fa-twitter, .fa-linkedin-square, .fa-envelope{
+    color: darkcyan;
+    transition-duration: 0.5s;
+}
+
+.fa-instagram:hover, .fa-twitter:hover{
+    color: cyan;
+    transform: rotateZ(10deg);
+}
+
+small:hover .fa-envelope{
+    color: cyan;
+    transform: rotateZ(-10deg);
+}
+
+.fa-facebook:hover,  .fa-linkedin-square:hover{
+    color: cyan;
+    transform: rotateZ(-10deg);
+}
+
+.footemail:active, .footemail:visited, .footemail:hover, .footemail{
+    color: white;
+    text-decoration: none;
+}
+
+.footaddress:active, .footaddress:visited, .footaddress{
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.footaddress:hover{
+    color: darkcyan;
+    text-decoration: none;
+}
+/* Footer End */

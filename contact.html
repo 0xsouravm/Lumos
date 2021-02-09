@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+
+    <script>
+        function thanks(){
+            alert("Thanks For Contacting");
+        }
+    </script>
+</head>
+<body style="background-color: rgb(34,40,49);"> 
+    <div id="particles-js" style="height: 700px">
+        <div class="navbar_">
+            <div class="logo" div data-aos="fade-down"><a class="logolink" href="index.html">L U M O S</a></div>
+            <ul class="navul">
+                <div data-aos="fade-down"><li class="navli"><a class="navlink" href="index.html">Home</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="100"><li class="navli"><a class="navlink" href="about.html">About</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="150"><li class="navli"><a class="navlink" href="contact.html" >Contact</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="200"><li class="navli"><a class="navlink" href="login.html">Login</a></li></div>         
+            </ul>
+        </div>
+        <fieldset class="fielddes" style="height: 600px;">
+            <div class="container">
+                <form method="post">
+                    <h3>Drop A Message</h3>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" class="inp" placeholder="e.g. John Doe" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="text" name="email" class="inp" placeholder="e.g. xyz@email.com" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Phone :</label>
+                                <input type="number" name="phone" class="inp" placeholder="" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="message">Message :</label><br>
+                                <textarea class="inp2" name="bio" cols="30" rows="10" name="message" placeholder="Hey There!"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <center>
+                <div class="row">
+                        <input type="submit" name="btnSubmit" class="button" value="Send" onclick="thanks()"/>
+                </div>
+            </center>
+            </div>
+        </fieldset>
+        <script src="script/particles.js"></script> 
+        <script src="script/app.js"></script>
+    </div>
+
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                            <h3 class="text-muted mb-md-0 mb-5 bold-text" data-aos="fade-down" data-aos-duration="1000"><a class="logolink" href="index.html">L U M O S</a></h3>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"  data-aos="fade-right" data-aos-duration="1000">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300"><a class="footlink" href="index.html">Home</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500"><a class="footlink" href="about.html">About</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700"><a class="footlink" href="contact.html">Contact</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="900"><a class="footlink" href="login.html">Login</a></li>         
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"  data-aos="fade-left" data-aos-duration="1000">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                            <a href="https://www.google.com/maps/place/Silicon+Institute+of+Technology/@20.3506823,85.8041473,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1908e064769e73:0x9288172f3a98c7a4!8m2!3d20.3506773!4d85.806336" target="_blank" class="footaddress"><p class="mb-1">CID-6, FRONTEND DEV</p>
+                            <p>SUPERNOVA</p></a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> &nbsp<span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> <span style="font-family: 'Orbitron', sans-serif;">LUMOS</span> All Rights Reserved.</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end"data-aos="fade-right" data-aos-duration="1000">
+                            <h6 class="text-muted bold-text"><b>AKASH PANDIT</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a class="footemail" href="mailto: akaashpandit13@gmail.com" target="_blank">akapandit@gmail.com</a></small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3"  data-aos="fade-left" data-aos-duration="1000">
+                            <h6 class="text-muted bold-text"><b>GILLIAN SNOW</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a class="footemail" href="mailto: gnow139@gmail.com" target="_blank">gnow139@gmail.com</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- FOR AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- FOR AOS -->
+</body>
+</html>

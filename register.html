@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Document</title>
+<script>
+    function move() {
+      var i = 0;
+      if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var elem1 = document.getElementById("myProgress");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 319) {
+            clearInterval(id);
+            i = 0;
+          } 
+          else {
+            width+=3;
+            elem.style.width = width + "px";
+            elem.style.backgroundColor="cyan";
+            elem1.style.marginLeft = width + "px";
+            elem1.style.width = (313 - width) + "px";
+          }
+        }   
+      }
+    }
+</script>
+</head>
+<body style="background-color: rgb(34,40,49);"> 
+    <div id="particles-js" style="height: 700px">
+        <div class="navbar_">
+            <div class="logo" div data-aos="fade-down"><a class="logolink" href="index.html">L U M O S</a></div>
+            <ul class="navul">
+                <div data-aos="fade-down"><li class="navli"><a class="navlink" href="index.html">Home</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="100"><li class="navli"><a class="navlink" href="about.html">About</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="150"><li class="navli"><a class="navlink" href="contact.html" >Contact</a></li></div>
+                <div data-aos="fade-down" data-aos-delay="200"><li class="navli"><a class="navlink" href="login.html">Login</a></li></div>         
+            </ul>
+        </div>
+    <center>
+        <fieldset class="fielddes" style="height: 600px;">
+            <p class="signin">Sign Up</p>
+            <form action="result.html" method="get" style="padding-top: 10px;padding-bottom: 5px;">
+                <label for="name" style="margin-left: 13px;">Name :</label>
+                <input class="inp" type="text" id="name" name="name" required style="margin-left: 43px;" placeholder="e.g. John Doe">
+                </br></br>
+                <label for="email" style="margin-left: 13px;">Email :</label>
+                <input class="inp" type="email" id="email" name="email" required style="margin-left: 45px;" placeholder="e.g. xyz@email.com">
+                </br></br>
+                <label for="password" style="margin-left:13px;">Password :</label>
+                <input class="inp" type="password" id="password" name="password" required style="margin-left: 17px;" placeholder="Shhh.....It's a Secret">
+                </br></br></br>
+                <input id="button" class="button" type="submit" value="Sign Up" onclick="move();">
+                <br><br><br>
+                <div id="myBar">
+                    <div id="myProgress"></div>
+                </div>
+            </form>
+            </br>
+            <label style="margin-left: 105px;">Or Sign Up Using</label>
+            <br><br>
+            <a href="https:/gmail.com" class="google" target="_blank"></a>
+            <a href="https:/fb.com" class="fb" target="_blank"></a>
+            <a href="https:/twitter.com" class="twitter" target="_blank"></a>
+            </br></br>
+            <label style="margin-left: 70px;">Have An Account?<a class="reg" href="login.html" style="text-decoration: none;">&nbspLOGIN</a></label>
+        </fieldset>
+        <script src="script/particles.js"></script> 
+        <script src="script/app.js"></script>
+    </div>
+    </center>
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                            <h3 class="text-muted mb-md-0 mb-5 bold-text" data-aos="fade-down" data-aos-duration="1000"><a class="logolink" href="index.html">L U M O S</a></h3>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"  data-aos="fade-right" data-aos-duration="1000">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300"><a class="footlink" href="index.html">Home</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="500"><a class="footlink" href="about.html">About</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="700"><a class="footlink" href="contact.html">Contact</a></li>
+                                <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="900"><a class="footlink" href="login.html">Login</a></li>         
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12"  data-aos="fade-left" data-aos-duration="1000">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                            <a href="https://www.google.com/maps/place/Silicon+Institute+of+Technology/@20.3506823,85.8041473,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1908e064769e73:0x9288172f3a98c7a4!8m2!3d20.3506773!4d85.806336" target="_blank" class="footaddress"><p class="mb-1">CID-6, FRONTEND DEV</p>
+                            <p>SUPERNOVA</p></a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end"  data-aos="fade-up" data-aos-duration="1000">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> &nbsp<span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> <span style="font-family: 'Orbitron', sans-serif;">LUMOS</span> All Rights Reserved.</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end"  data-aos="fade-right" data-aos-duration="1000">
+                            <h6 class="text-muted bold-text"><b>AKASH PANDIT</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a class="footemail" href="mailto: akaashpandit13@gmail.com" target="_blank">akapandit@gmail.com</a></small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3"  data-aos="fade-left" data-aos-duration="1000">
+                            <h6 class="text-muted bold-text"><b>GILLIAN SNOW</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> <a class="footemail" href="mailto: gnow139@gmail.com" target="_blank">gnow139@gmail.com</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- FOR AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- FOR AOS -->
+</body>
+</html>
